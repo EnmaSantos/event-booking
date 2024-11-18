@@ -1,0 +1,46 @@
+# Logs
+logs/
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor Files
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Build directories
+dist/
+build/
+target/
+out/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.pid
+*.seed
+*.old
+
+# Cache directories
+.cache/
+.terraform/
+.pip-cache/
+__pycache__/
+
+# Environment variables and secrets
+.env
+.env.*
+*.key
+*.pem
