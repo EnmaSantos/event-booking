@@ -15,7 +15,7 @@ const RegistrationForm = ({ eventId }) => {
 
     return (
         <div className="mt-4">
-            <h3 className="text-center">Register for this Event</h3>
+            
             <form onSubmit={handleSubmit} className="mt-3">
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
