@@ -5,7 +5,7 @@ const events = [
 
 const registrations = [
     { eventId: 1, name: "John Doe", email: "johndoe@example.com" },
-    { eventId: 1, name: "Jane Smith", email: "janesmith@example.com" },
+    { eventId: 2, name: "Jane Smith", email: "janesmith@example.com" },
 ];
 
 module.exports = { events, registrations };
