@@ -24,9 +24,11 @@ mongoose.connect(process.env.MONGODB_URI, {
 const Event = require('./models/Event');
 
 app.get('/events', async (req, res) => {
+    console.log('Received GET /events'); // Log when the route is hit
     try {
-        const events = await Event.find();
-        res.json(events);
+        const events = await Event.find(); // Fetch events from MongoDB
+        console.log('Fetched events:', events); // Log fetched events
+        res.json(events); // Respond with events
     } catch (error) {
         console.error('Error fetching events:', error);
         res.status(500).json({ error: 'Error fetching events' });
