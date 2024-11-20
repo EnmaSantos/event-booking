@@ -1,3 +1,17 @@
-# GET Request 
-http://localhost:5000/events
+### Get all events
+GET http://localhost:5000/events
 
+### Get an event by ID
+GET http://localhost:5000/events/673c2b1e8ba434b927e1bbd3
+
+### Register for an event
+POST http://localhost:5000/events/673c2b1e8ba434b927e1bbd3/register
+Content-Type: application/json
+
+{ 
+    "name": "John Doe",
+    "email": "testingemail@yopmail.com"
+}
+
+### Get registrations by email
+GET http://localhost:5000/registrations?email=testingemail@yopmail.com

@@ -26,7 +26,7 @@ const Event = require('./models/Event');
 app.get('/events', async (req, res) => {
     console.log('Received GET /events'); // Log when the route is hit
     try {
-        const events = await Event.find(); // Fetch events from MongoDB
+        const events = await Event.find({}); // Fetch events from MongoDB
         console.log('Fetched events:', events); // Log fetched events
         res.json(events); // Respond with events
     } catch (error) {
@@ -49,6 +49,16 @@ app.get('/events/:id', async (req, res) => {
     }
 });
 
+// Fetch all registrations
+app.get('/registrations', async (req, res) => {
+    try {
+        const registrations = await Registration.find();
+        res.json(registrations);
+    } catch (error) {
+        console.error('Error fetching registrations:', error);
+        res.status(500).json({ error: 'Error fetching registrations' });
+    }
+});
 
 // Get all registrations for a user
 const Registration = require('./models/Registration');
