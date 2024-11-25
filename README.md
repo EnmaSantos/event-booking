@@ -92,7 +92,7 @@ Useful Websites to Learn More
 
 I found these websites useful during development:
 
--   [React Documentation](https://reactjs.org/docs/getting-started.html)
+-   [React Documentation](https://react.dev/reference/react)
 -   [Node.js Documentation](https://nodejs.org/en/docs/)
 -   [MongoDB Documentation](https://www.mongodb.com/docs/)
 -   [Bootstrap CSS](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
